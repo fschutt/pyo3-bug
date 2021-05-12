@@ -1,0 +1,10 @@
+[package]
+name = "azul"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { git = "https://github.com/PyO3/pyo3", rev = "1ae3d8797315419e9843b7922a7a658b01dfe52a", default-features = false, features = ["abi3", "multiple-pymethods", "extension-module", "macros", "auto-initialize"] }
